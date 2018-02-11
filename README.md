@@ -6,7 +6,7 @@
 
 ### Github Pages:
 
-https://its-magic-in.herokuapp.com
+https://ark234.github.io/happy-fish/
 
 ### Challenge Statement:
 
