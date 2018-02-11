@@ -4,9 +4,9 @@
 
 ## Team Happy Fish
 
-### Github Pages:
+### Heroku Deployment:
 
-https://ark234.github.io/happy-fish/
+https://happy-fish.herokuapp.com/
 
 ### Challenge Statement:
 
