@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Passive IUU Detection Device</title>
+	<link rel="stylesheet" href="/css/master.css">
+</head>
+
+<body>
+	<main id="main-container">
+		<section class="header">
+			<h1>Passive IUU Detection Device</h1>
+			<p>Team Happy Fish</p>
+			<!-- <p>Live Data From Catena 4450</p> -->
+		</section>
+		<section class="body">
+			{{#sensorData}}
+			<div class="sensor-datum {{color}}">
+				<p>Device ID: {{device_id}}</p>
+				<p>Timestamp: {{convertedTime}}</p>
+				<p>Range (inches): {{rangeInches}}</p>
+				<hr>
+			</div>
+			{{/sensorData}}
+		</section>
+		<section class="footer">
+			<a class="gh" href="https://github.com/ark234/happy-fish"></a>
+		</section>
+	</main>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+/******************** CREDITS ********************/
+/* Entypo pictograms by Daniel Bruce — www.entypo.com */
+
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+/******************** GLOBAL ********************/
+body * {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	/* overflow: hidden; */
+	height: 100vh;
+	width: 100vw;
+	color: snow;
+	text-align: center;
+	/* text-shadow: 2px 1px rgb(255, 119, 0); */
+	font-kerning: none;
+	font-weight: 900;
+	/* font-family: 'Slabo 27px', serif; */
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+	margin: 0;
+	font-size: 45px;
+}
+
+p {
+	font-size: 24px;
+}
+
+/*---------- BUTTONS ----------*/
+button {
+	font-family: 'Bungee Hairline', cursive;
+	border-radius: 10px;
+	font-weight: 900;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+button:active {
+	transform: scale(0.9);
+}
+
+/*---------- ANCHORS ----------*/
+a {
+	text-decoration: none;
+	display: block;
+}
+
+a:hover {
+	color: goldenrod;
+	/* text-shadow: #891919; */
+	/* text-shadow: none; */
+}
+
+.gh:hover {
+	animation: scale 2s infinite ease-in-out;
+}
+
+/* www.gradient-animator.com */
+/* gradient depicting solar cycle */
+#main-container {
+	background-color: darkslategrey;
+}
+
+li {
+	display: flex;
+	justify-content: center;
+}
+
+img {
+	height: 25px;
+	width: 25px;
+	/* display: inline-block; */
+}
+
+/********** ANIMATIONS **********/
+@keyframes scale {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes slide {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+@keyframes roll {
+	0% {
+	}
+	33% {
+		transform: translateX(-30px) rotateZ(-30deg);
+	}
+	66% {
+		transform: translateX(30px) rotateZ(30deg);
+	}
+	100% {
+		/* transform: translateX(50x) */
+	}
+}
+
+/*********** HEADER **********/
+.header {
+	padding-top: 20px;
+	height: 150px;
+	background-color: rgba(16, 5, 5, 0.399);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*********** BODY **********/
+.body {
+	margin: 0 auto;
+	/* border: 1px solid red; */
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+}
+
+/*********** FOOTER **********/
+.footer {
+	/* position: absolute; */
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	/* bottom: 25px; */
+}
+
+/*---------- GitHub Repo ----------*/
+.gh {
+	background-image: url('/assets/github.svg');
+	width: 50px;
+	height: 50px;
+}
+
+/********** MISC **********/
+
+.loading {
+	display: none;
+}
+
+.red {
+	background-color: rgba(198, 57, 57, 0.742);
+}
